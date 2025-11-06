@@ -1,0 +1,2 @@
+No primeiro log, as threads acessavam a váriavel ao mesmo tempo, causando repetições e valores fora de ordem. No segundo log, após o uso de monitores
+o acesso ficou controlado, já que cada valor é armazenado e lido de forma sequencial e sem conflitos.
