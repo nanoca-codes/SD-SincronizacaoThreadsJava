@@ -13,7 +13,19 @@ Na área da programação, a soncronização de processos evita que múltiplos p
 
 Na primeira atividade foi proposto uma execução sem sincronização. O programa foi rodado sem nenhuma forma de controle de acesso entre as duas threads disponibilizadas: <ins>**Produtor**</ins> e <ins>**Consumidor**</ins>
 
-![Print da primeira execução.]("C:\Users\acoli\OneDrive\Pictures\Screenshots\Captura de tela 2025-11-06 152012.png")
+##### Exemplo da primeira execução
+
+```
+Consumidor: 0
+Produtor: 0
+Consumidor: 0
+Consumidor: 0
+Produtor: 1
+Produtor: 2
+Produtor: 3
+Consumidor: 3
+Consumidor: 3
+```
 
 Pode-se análisar que as threads foram executadas de forma desordenada e concorrente, causando leituras repetidas e inconssistentes. O consumidor leu o mesmo valor diversas vezes, mostrando que a váriavel foi acessada enquanto o produtor ainda fazia atualização de seu conteúdo, o que mostra um comportamento caracteristico de uma condição corrida, onde o resulta depende da ordem aleatória da execução das threads.
 
