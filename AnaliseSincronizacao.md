@@ -37,9 +37,24 @@ Isso faz com que notemos que, sem sincronização o programa apresenta um compor
 
 Na segunda atividade a proposta foi executar um programa utilizando **monitores**, os quais controlam o acesso e evitam que interferências simultâneas ocorram. Nessa execução a palavra ***synchronized*** foi adicionada nos métodos armazenar e carregar, o que garantiu que apenas uma thread por vez acessasse a váriavel **DADO**.
 
-![Print da segunda execução.]("C:\Users\acoli\OneDrive\Pictures\Screenshots\Captura de tela 2025-11-06 154623.png") 
+##### Exemplo da segunda execução 
 
-No inicio da execução a mensagem **"Iniciando"** e no final a mensagem **"Finalizando** mostram que o acesso está sendo feito de uma forma controlada e sequenial, diferente da primeira execução. Isso faz que não existam mais leituras e fora de ordem ou repetidas já que cada valor é produzido e lido na sequência correta.
+```
+Armazenar Iniciando...
+Armazenar Finalizando...
+Carregar Iniciando...
+Carregar Finalizando...
+Produtor usando Monitor: 0
+Consumidor usando Monitor: 0
+Armazenar Iniciando...
+Armazenar Finalizando...
+Produtor usando Monitor: 1
+Carregar Iniciando...
+Carregar Finalizando...
+Consumidor usando Monitor: 1
+```
+
+No inicio da execução as mensagem **"Iniciando"** e **"Finalizando** mostram que o acesso está sendo feito de uma forma controlada e sequenial, diferente da primeira execução. Isso faz que não existam mais leituras e fora de ordem ou repetidas já que cada valor é produzido e lido na sequência correta.
 
 Ao usar os monitores, o programa passou a funcionar de forma controlada e previsível, eliminando a condição de corrida. Isso fez com que as threads trabalhassem em turnos diferentes, respeitando a integridade dos dados mesmo que pequenas pausas de espera entre as operações ocorressem.
 
