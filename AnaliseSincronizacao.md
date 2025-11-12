@@ -23,9 +23,9 @@ Isso faz com que notemos que, sem sincronização o programa apresenta um compor
 
 ### 2. Execução feita com Monitores 
 
-Na segunda atividade a proposta foi executar um programa utilizando **monitores**, os quais controlam o acesso e evitam que interferências simultâneas ocorram. Nessa execução a palavra ***synchronized*** foi adicionada nos métodos <sup>armazenar</sub> e <sup>carregar</sub>, o que garantiu que apenas uma thread por vez acessasse a váriavel **DADO**.
+Na segunda atividade a proposta foi executar um programa utilizando **monitores**, os quais controlam o acesso e evitam que interferências simultâneas ocorram. Nessa execução a palavra ***synchronized*** foi adicionada nos métodos armazenar e carregar, o que garantiu que apenas uma thread por vez acessasse a váriavel **DADO**.
 
-![Print da segunda execução.]("C:\Users\acoli\OneDrive\Pictures\Screenshots\Captura de tela 2025-11-06 154623.png")
+![Print da segunda execução.]("C:\Users\acoli\OneDrive\Pictures\Screenshots\Captura de tela 2025-11-06 154623.png") 
 
 No inicio da execução a mensagem **"Iniciando"** e no final a mensagem **"Finalizando** mostram que o acesso está sendo feito de uma forma controlada e sequenial, diferente da primeira execução. Isso faz que não existam mais leituras e fora de ordem ou repetidas já que cada valor é produzido e lido na sequência correta.
 
