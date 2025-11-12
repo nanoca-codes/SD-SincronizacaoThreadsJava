@@ -7,7 +7,6 @@
 * [3. Execução feita com eventos](#3-execução-feita-com-eventos)
 * [Análise pessoal](#análise-pessoal)
 
-
 ࿙࿚   ࿙࿚ ㅤ⊹ ㅤ࿙࿚ㅤ ☆ ㅤ࿙࿚ㅤ ⊹  ࿙࿚ㅤ࿙࿚  ࿙࿚   ࿙࿚ ㅤ⊹ ㅤ࿙࿚ㅤ ☆ ㅤ࿙࿚ㅤ ⊹  ࿙࿚ㅤ࿙࿚ㅤ ࿙࿚   ࿙࿚ ㅤ⊹  ࿙࿚   ࿙࿚ ㅤ⊹ ㅤ࿙࿚ㅤ ☆ ㅤ࿙࿚ㅤ ⊹  
 
 ### O que é uma análise de sincronização?
@@ -17,6 +16,8 @@ Uma análise de sincronização nada mais é que um processo que visa garantir a
 Na área da programação, a soncronização de processos evita que múltiplos programas acessem os mesmos dados ao mesmo tempo e de forma incorreta, fazendo assim o sistema funcionar de forma coerente.
 
 [Voltar ao Sumário](#sumário)
+
+࿙࿚   ࿙࿚ ㅤ⊹ ㅤ࿙࿚ㅤ ☆ ㅤ࿙࿚ㅤ ⊹  ࿙࿚ㅤ࿙࿚  ࿙࿚   ࿙࿚ ㅤ⊹ ㅤ࿙࿚ㅤ ☆ ㅤ࿙࿚ㅤ ⊹  ࿙࿚ㅤ࿙࿚ㅤ ࿙࿚   ࿙࿚ ㅤ⊹  ࿙࿚   ࿙࿚ ㅤ⊹ ㅤ࿙࿚ㅤ ☆ ㅤ࿙࿚ㅤ ⊹  
 
 ## Atividades de Sincronização de Threads em Java
 
@@ -43,6 +44,8 @@ Pode-se análisar que as threads foram executadas de forma desordenada e concorr
 Isso faz com que notemos que, sem sincronização o programa apresenta um comportamental totalmente imprevisível, não garantindo que o consumidor leia o valor mais recente do produtor, comprometendo a conscitência e integridade dos dados.
 
 [Voltar ao Sumário](#sumário)
+
+࿙࿚   ࿙࿚ ㅤ⊹ ㅤ࿙࿚ㅤ ☆ ㅤ࿙࿚ㅤ ⊹  ࿙࿚ㅤ࿙࿚  ࿙࿚   ࿙࿚ ㅤ⊹ ㅤ࿙࿚ㅤ ☆ ㅤ࿙࿚ㅤ ⊹  ࿙࿚ㅤ࿙࿚ㅤ ࿙࿚   ࿙࿚ ㅤ⊹  ࿙࿚   ࿙࿚ ㅤ⊹ ㅤ࿙࿚ㅤ ☆ ㅤ࿙࿚ㅤ ⊹  
 
 ### 2. Execução feita com Monitores 
 
@@ -71,6 +74,8 @@ Ao usar os monitores, o programa passou a funcionar de forma controlada e previs
 
 [Voltar ao Sumário](#sumário)
 
+࿙࿚   ࿙࿚ ㅤ⊹ ㅤ࿙࿚ㅤ ☆ ㅤ࿙࿚ㅤ ⊹  ࿙࿚ㅤ࿙࿚  ࿙࿚   ࿙࿚ ㅤ⊹ ㅤ࿙࿚ㅤ ☆ ㅤ࿙࿚ㅤ ⊹  ࿙࿚ㅤ࿙࿚ㅤ ࿙࿚   ࿙࿚ ㅤ⊹  ࿙࿚   ࿙࿚ ㅤ⊹ ㅤ࿙࿚ㅤ ☆ ㅤ࿙࿚ㅤ ⊹  
+
 ### 3. Execução feita com Eventos
 
 Na terceira atividade a proposta foi de executar os programas utilizando **eventos**. Os eventos são representados por pequenos comando como wait e notify, o que permite que as threads se comuniquem entre si. Nessa execução, o produtor sinalizava quando um novo dado estava disponível e só após receber uma notificação o consumidor pode lê-la.
@@ -98,6 +103,8 @@ Com os eventos, o fluxo é muito mais natural e eficiente e também o uso deles 
 
 [Voltar ao Sumário](#sumário)
 
+࿙࿚   ࿙࿚ ㅤ⊹ ㅤ࿙࿚ㅤ ☆ ㅤ࿙࿚ㅤ ⊹  ࿙࿚ㅤ࿙࿚  ࿙࿚   ࿙࿚ ㅤ⊹ ㅤ࿙࿚ㅤ ☆ ㅤ࿙࿚ㅤ ⊹  ࿙࿚ㅤ࿙࿚ㅤ ࿙࿚   ࿙࿚ ㅤ⊹  ࿙࿚   ࿙࿚ ㅤ⊹ ㅤ࿙࿚ㅤ ☆ ㅤ࿙࿚ㅤ ⊹  
+
 ## Análise pessoal
 
 Durante a atividade pude notar o quanto as sincronizações são importantes para sistemas, pois as mesmas mantem a consistência e bom funcionamento do seu programa. Obviamente algumas execuções são mais eficiente que outras, como por exemplo a **sincronização entre eventos**, que é muito mais fluida e eficiente que a **sincronização por monitores**, que demanda uma certa espera entre as threads.
@@ -105,5 +112,7 @@ Durante a atividade pude notar o quanto as sincronizações são importantes par
 Em uma conclusão geral, os mecanismos de sincronização servem para manter o desempenho, integridade e consistência de aplicações. 
 
 [Voltar ao início](#relátorio-sobre-analises-de-sincronização-no-java)
+
+࿙࿚   ࿙࿚ ㅤ⊹ ㅤ࿙࿚ㅤ ☆ ㅤ࿙࿚ㅤ ⊹  ࿙࿚ㅤ࿙࿚  ࿙࿚   ࿙࿚ ㅤ⊹ ㅤ࿙࿚ㅤ ☆ ㅤ࿙࿚ㅤ ⊹  ࿙࿚ㅤ࿙࿚ㅤ ࿙࿚   ࿙࿚ ㅤ⊹  ࿙࿚   ࿙࿚ ㅤ⊹ ㅤ࿙࿚ㅤ ☆ ㅤ࿙࿚ㅤ ⊹  
 
 
